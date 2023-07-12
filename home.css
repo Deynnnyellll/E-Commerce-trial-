@@ -391,6 +391,44 @@ body{
 .hide-element {
     display: none;
 }
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    background-color: #e9e9f4;
+}
+
+#footer .social-media {
+    position: absolute;
+    left: 15%;
+}
+
+#footer .social-media i {
+    letter-spacing: 50px;
+    font-size: 25pt;
+}
+
+#footer .forms {
+    position: absolute;
+    left: 60%;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.submit-button{
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    padding: 5px 10px 5px 10px;
+    background-color:black;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
   
 
 
@@ -408,7 +446,6 @@ button.normal {
     outline: none;
     transition: 0.2s
 }
-
 
 
 /** Scrollbar **/
