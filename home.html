@@ -179,39 +179,52 @@
             <button class="normal"> Explore More </button>
         </section>
 
-    <section id = "footer">
+        <section id="video">
+            <h1> Shoes Speak Louder than Words </h1>
+            <video id="sneakers" autoplay loop muted>
+                <source src="https://drive.google.com/uc?export=download&id=1bX29uPrPeNM7i6_QikvXV6an26C4ry3u" type="video/mp4">
+            </video>
+            <br><br><br>
+        </section>
+
+        <section id = "footer">
             <div class= "social-media">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"> </i>
-                <i class="fa-brands fa-instagram"> </i>
-                <i class="fa-brands fa-github"> </i>
+                <div class="facebook"> <i class="fa-brands fa-facebook"></i> </div>
+                <div class="twitter"> <i class="fa-brands fa-twitter"> </i> </div>
+                <div class="instagram"> <i class="fa-brands fa-instagram"> </i> </div>
+                <div class="github"> <i class="fa-brands fa-github"> </i> </div>
             </div>
 
-            <div class = "forms">
+            <div class = "forms" method="doPost" action="https://script.google.com/macros/s/AKfycbw-YuzYLq9CAzThGw9dPBFb5wMEh2qm7ZyT3YZyxnl6e1hDqXoFLsaJip7hoI1O5qUB/exec">
                 <form>
-                    <div>
-                        <label for="fname"> First Name </label>
+                    <h3> Do you have any concern? </h3>
+                    <div class="fname">
+                        <label for="fname"> <b> First Name </b> </label>
                         <input type="text" name="fname" id="fname">
                     </div>
                     <br>
-                    <div>
-                        <label for="lname"> Last Name </label>
+                    <div class="lname">
+                        <label for="lname"> <b>Last Name</b> </label>
                         <input type="text" name="lname" id="lname">
                     </div>
                     <br>
-                    <div>
-                        <label for="Gender"> Gender: </label>
+                    <div class="gender">
+                        <label for="gender"> <b> Gender: </b> </label>
                         <input type="radio" id="male" name="gender" value="male">
                         <label for="male"> Male </label>
                         <input type="radio" id="female" name="gender" value="female">
                         <label for="female"> Female </label>
                         <input type="radio" id="none" name="gender" value="none">
                         <label for="none"> Prefer not to say </label>
+                    </div>
+                    <div class = "concern">
+                        <p> <label for="concern"> <b> Concern </b></label> </p>
+                        <textarea name="concern" id="concern" cols="30" rows="10"></textarea>
                     </div> <br>
                         <button class="submit-button"> Submit </button>
-
                 </form>
             </div>
         </section>
+    
 </body>
 </html>
