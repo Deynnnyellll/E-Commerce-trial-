@@ -6,7 +6,7 @@ body{
 
 /*Whole Header*/
 #upper-header {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
     z-index: 999;
     position: sticky;
     top: 0;
@@ -18,10 +18,12 @@ body{
     margin-top: 10px;
     margin-left: 20px;
     text-align: center;
+    cursor: context-menu;
 }
 
 #upper-header .logo h4{
     margin-top: -10px;
+    cursor: context-menu;
 }
 
 
@@ -31,7 +33,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background:#e9e9f4;
+    background: #e9e9f4;
 }
 
 #navbar-icon {
@@ -167,6 +169,18 @@ body{
     font-size: 12pt;
 }
 
+#shop-now .tagline button:hover {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/011/888/124/small/neumorphic-rectangle-button-free-png.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    background-color: transparent;
+    color: rgb(185, 182, 182);
+    border: none;
+    padding: 20px 60px 20px 60px;
+    cursor: pointer;
+    font-size: 12pt;
+    transform: translateY(-5%);
+}
 
 #featured-product .title {
     text-align: center;
@@ -242,7 +256,7 @@ body{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: 2.5%;
+    margin-top: 5%;
     background-image: url("https://images.wallpaperscraft.com/image/single/ballerina_pointe_shoes_legs_122337_2560x1440.jpg");
     height: 30vh;
     background-size: cover;
@@ -271,6 +285,15 @@ body{
     margin-right: auto;
 }
 
+#banner button:hover {
+    margin-top: -15px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-2%);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: lightgray;
+    border-radius: 5px;
+}
 
 
 /** Product Page **/
@@ -392,42 +415,97 @@ body{
     display: none;
 }
 
+#video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#video h1{
+    margin-left: 20px;
+    margin-right: auto;
+    font-size: 30pt;
+}
+
+
 #footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 200px;
+    height: 300px;
     background-color: #e9e9f4;
 }
 
 #footer .social-media {
     position: absolute;
-    left: 15%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #footer .social-media i {
-    letter-spacing: 50px;
+    letter-spacing: 30px;
     font-size: 25pt;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.twitter:hover {
+    color: #00acee;
+}
+
+.instagram:hover {
+    color: #f58529;
+}
+
+.github:hover {
+    color: #333333;
 }
 
 #footer .forms {
     position: absolute;
-    left: 60%;
+    left: 50%;
     display: flex;
     align-items: center;
-    vertical-align: middle;
+    margin-top: -3%;
 }
 
-.submit-button{
+
+
+.submit-button {
     position: absolute;
     top: 100%;
-    left: 40%;
-    padding: 5px 10px 5px 10px;
+    left: 30%;
+    padding: 5px 30px 5px 30px;
     background-color:black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     color: white;
     border-radius: 20px;
     cursor: pointer;
+}
 
+.submit-button:hover {
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    padding: 5px 30px 5px 30px;
+    background-color:rgb(14, 14, 14);
+    transform: translateY(-5%);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.concern {
+    position: absolute;
+    top: 1%;
+    left: 120%
 }
   
 
@@ -446,6 +524,7 @@ button.normal {
     outline: none;
     transition: 0.2s
 }
+
 
 
 /** Scrollbar **/
